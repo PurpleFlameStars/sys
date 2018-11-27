@@ -94,6 +94,7 @@ public class HttpUtils {
         NetworkInfo info = con.getActiveNetworkInfo();
         if (info!=null&&info.isConnected()){
             return true;
+            
         }else{
             return false;
         }
