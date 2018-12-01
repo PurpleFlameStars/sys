@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <com.example.layout.SouLayout
+        android:id="@+id/sou_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.layout.SouLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="搜索历史"
+            />
+        <ImageView
+            android:id="@+id/image_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/close"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.example.layout.FlowLayout
+        android:id="@+id/flow_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        ></com.example.layout.FlowLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="热门搜索"
+            />
+        <com.example.layout.FlowLayout
+            android:id="@+id/flow_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ></com.example.layout.FlowLayout>
+
+
+</LinearLayout>
